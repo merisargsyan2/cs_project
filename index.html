@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+            background-color: LightSteelBlue;
+        }
+
+        #container {
+            display: none;
+
+        }
+
+        .btns {
+            font-size: 20px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            width: 250px;
+            height: 80px;
+            text-align: center;
+            background: SteelBlue;
+            color: black;
+        }
+
+        .loadQuestion {
+            display: none;
+        } 
+        </style>
+
+    <script src="script.js"> </script>
+</head>
+<center>
+    <body>
+    <br>
+    <p id='bg' style="font-family :cursive,serif;font-size:50px;font-style:italic;">ԲԱՐԻ ԳԱԼՈՒՍՏ </p>
+    <div id='container'>                
+                    <span>
+                            <p>Ճիշտ՝  <span id="corrects"></span> </p>          
+                    </span>
+        <span>
+                            <p>Սխալ՝ <span id="wrongs"></span>  </p>            
+                    </span>
+        <div id="question">
+            <img id="imgImage" src="" height=400px width=350px/>
+            <p id='ao' style="font-size :20px">Արդյոք ով է՞</p>
+            <button class='btns' id='aa' onmousedown="answerQuestion('aa')"></button>
+            <button class='btns' id='ab' onmousedown="answerQuestion('ab')"></button>
+            <button class='btns' id='ac' onmousedown="answerQuestion('ac')"></button>
+            <button class='btns' id='ad' onmousedown="answerQuestion('ad')"></button>
+        </div>
+    </div>
+    <button id='btn' onmousedown="startGame()" style="font-size : 40px"
+    "width : 150; height : 70px " >ՍԿՍԵԼ ԽԱՂԸ </button>
+
+    </body>
+</center>
+</html>
+
